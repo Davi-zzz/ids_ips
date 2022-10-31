@@ -1,0 +1,3 @@
+#run snort, loading the configuration rules to snort.lua from local.rules and monitoring with the rules defined in local.rules
+snort -c /usr/local/etc/snort/snort.lua -R /usr/local/etc/rules/local.rules \
+-i eth0 -A alert_fast -s 65535 -k none
